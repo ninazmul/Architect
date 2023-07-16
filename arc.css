@@ -108,7 +108,7 @@ ul{
 }
 .f-desc{
     text-align: justify;
-    padding: 20px 20px 100px 0px;
+    padding: 20px 20px 70px 0px;
     color: gray;
     
 }
@@ -130,6 +130,56 @@ ul{
 }
 .f-img{
     width: 1600px;
+}
+.fact-title{
+
+}
+.fact-t{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.facts-i{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    /* border: 2px solid orangered; */
+}
+.icon-f{
+    border: 2px solid orangered;
+    border-radius: 10px;
+    padding: 40px;
+    background: wheat;
+    width: 150px;
+    height: 150px;
+    
+}
+.icon-n{
+    font-size: 3em;
+}
+.icon-name{
+    color: gray;
+}
+footer{
+    background: wheat;
+}
+.ft{
+    text-align: center;
+}
+.footer-t{
+    font-size: 4em;
+    padding-bottom: 20px;
+}
+.footer-desc{
+    color: gray;
+    padding-bottom: 20px;
+}
+.ft-i{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
 }
 
 
@@ -192,8 +242,40 @@ ul{
     .f-desc{
         padding: 10px 0px 30px 0px;
     }
-}
+    .facts-i{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .fact-desc{
+        text-align: justify;
+        padding: 10px;
+    }
+    .fact-t{
+        /* padding: 10px; */
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    /* footer{ */
+        background: wheat;
+    
+    .ft{
+        text-align: center;
+    }
+    .footer-t{
+        font-size: 3em;
+        padding-bottom: 10px;
+    }
+    .footer-desc{
+        color: gray;
+        padding: 20px;
+        text-align: justify;
+    }
+    .ft-i{
+        flex-direction: column;
+        gap: 20px;
+    }
 
+}
 
 /* medium device */
 @media screen and (min-width: 577px) and (max-width: 992px){
@@ -249,5 +331,43 @@ ul{
     }
     .f-desc{
         padding: 10px 0px 30px 0px;
+        text-align: center;
+        width: 1fr;
     }
+    .facts-i{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        /* margin: 50px; */
+        padding: 0px;
+        margin: 10px;
+        /* align-self: center; */
+        justify-items: center;
+    }
+    .fact-desc{
+        text-align: center;
+        padding: 10px;
+    }
+    .fact-t{
+        /* padding: 10px; */
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .ft{
+        text-align: center;
+    }
+    .footer-t{
+        font-size: 3em;
+        padding-bottom: 10px;
+    }
+    .footer-desc{
+        color: gray;
+        padding: 20px;
+        text-align: justify;
+    }
+    .ft-i{
+        flex-direction: column;
+        gap: 20px;
+    }
+
 }
