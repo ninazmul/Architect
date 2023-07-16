@@ -26,7 +26,7 @@ ul{
     color: black;
 
 }
-.titlebar{
+.titlebar, .features{
     color: orangered;
 }
 .banner-c{
@@ -40,7 +40,7 @@ ul{
     color: black;
 }
 .banner-desc{
-    color: rgb(54, 54, 54);
+    color: gray;
 }
 .p-btn{
     padding: 10px;
@@ -56,6 +56,35 @@ ul{
     align-items: center;
     /* width: 600px; */
     
+}
+.main-f{
+    display: flex;
+    align-items: center;
+    /* margin-top: 50px; */
+    padding: 50px 10px;
+}
+.main-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-radius: 20px;
+}
+.main-t{
+    text-align: left;
+    width: 80%;
+    padding: 50px;
+}
+.main-title{
+    font-size: 3em;
+}
+.quick-list{
+    
+    color: gray;
+    /* font-weight: 300; */
+}
+.main-desc{
+    text-align: justify;
+    color: gray;
 }
 
 
@@ -74,6 +103,19 @@ ul{
     .banner-t{
         font-size: 3em;
     }
+    .main-f{
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+    .main-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-t{
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+      
+    }
 }
 
 /* medium device */
@@ -84,4 +126,19 @@ ul{
     nav{
         flex-direction: column;
         margin-bottom: 20px;
+    }
+    .banner-t{
+        font-size: 3em;
+    }
+    .main-f{
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+    .main-img{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-t{
+        text-align: center;
+        padding: 10px;
+        width: 80%;
 }
