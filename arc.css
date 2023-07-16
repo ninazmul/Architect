@@ -1,4 +1,87 @@
 
 *{
     font-family: 'Work Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: wheat;
+    padding: 10px 50px 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.menus{
+    
+    text-decoration: none;
+    color: black;
+}
+ul{
+    display: flex;
+    gap: 50px;
+    list-style: none ;
+    color: black;
+
+}
+.titlebar{
+    color: orangered;
+}
+.banner-c{
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+}
+.banner-t{
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+}
+.banner-desc{
+    color: rgb(54, 54, 54);
+}
+.p-btn{
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    background: orangered;
+    border: none;
+    border-radius: 5px;
+}
+.banner-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 600px; */
+    
+}
+
+
+/* small device */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    ul{
+        gap: 10px;
+    }
+    .banner-t{
+        font-size: 3em;
+    }
+}
+
+/* medium device */
+@media screen and (min-width: 577px) and (max-width: 992px){
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+        margin-bottom: 20px;
 }
